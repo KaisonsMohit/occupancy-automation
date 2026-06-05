@@ -2,17 +2,16 @@
   "name": "occupancy-automation",
   "version": "1.0.0",
   "description": "Daily occupancy report automation - Gmail IMAP to WhatsApp",
-  "main": "occupancy-automation-imap.js",
+  "main": "occupancy-automation.js",
   "scripts": {
-    "start": "node occupancy-automation-imap.js",
-    "test": "node occupancy-automation-imap.js"
+    "start": "node occupancy-automation.js",
+    "test": "node occupancy-automation.js"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.4.0",
     "pino": "^8.16.1",
     "pdf-parse": "^1.1.1",
-    "imap": "^0.8.19",
-    "mailparser": "^3.6.7"
+    "googleapis": "^118.0.0"
   },
   "engines": {
     "node": "18.x"
