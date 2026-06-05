@@ -25,8 +25,7 @@ jobs:
 
       - name: Run occupancy automation
         env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
         run: node occupancy-automation.js
 
       - name: Log execution
