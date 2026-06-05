@@ -27,7 +27,7 @@ jobs:
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
-        run: node occupancy-automation-imap.js
+        run: node occupancy-automation.js
 
       - name: Log execution
         if: always()
